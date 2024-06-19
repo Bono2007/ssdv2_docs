@@ -2,7 +2,13 @@
 
 ## Réglages Qbittorrent
 
-Par défaut il faut utiliser comme identifant (admin/adminadmin)
+Par défaut il faut utiliser le mot de passe dans le log :
+```
+docker logs qbittorrent | grep administrator
+The WebUI administrator username is: admin
+The WebUI administrator password was not set. A temporary password is provided for this session: Cc49NF7DE
+```
+Ce mot de passe est renouvelé à chaque relance du container, tant qu'il n'est pas changé dans le WebUI.
 
 ### Chemin d'enregistrement des fichiers
 
